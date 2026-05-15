@@ -62,6 +62,9 @@ Key settings:
 | `MODEL_NAME` | Model to use | `NousResearch/Hermes-3-Llama-3.1-8B` |
 | `MAX_ITERATIONS` | Max agent loop iterations | `20` |
 | `TEMPERATURE` | Sampling temperature | `0.3` |
+| `TIMEOUT` | Request timeout in seconds | `120` |
+
+> **Note (personal):** When running against LM Studio locally I usually set `TIMEOUT=300` — larger models can be slow to respond on first inference.
 
 ## Architecture
 
