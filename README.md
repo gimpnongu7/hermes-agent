@@ -2,6 +2,8 @@
 
 A fork of [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) — an autonomous agent framework powered by Hermes models with tool-calling capabilities.
 
+> **Personal fork** — I'm using this to experiment with local LLMs via [Ollama](https://ollama.ai) and [LM Studio](https://lmstudio.ai). Main changes from upstream: bumped default temperature down and max iterations up for longer reasoning chains.
+
 ## Features
 
 - 🤖 Powered by Hermes-2 and Hermes-3 models
@@ -58,8 +60,8 @@ Key settings:
 | `OPENAI_API_KEY` | Your API key | required |
 | `OPENAI_BASE_URL` | API base URL | `https://api.openai.com/v1` |
 | `MODEL_NAME` | Model to use | `NousResearch/Hermes-3-Llama-3.1-8B` |
-| `MAX_ITERATIONS` | Max agent loop iterations | `10` |
-| `TEMPERATURE` | Sampling temperature | `0.7` |
+| `MAX_ITERATIONS` | Max agent loop iterations | `20` |
+| `TEMPERATURE` | Sampling temperature | `0.3` |
 
 ## Architecture
 
