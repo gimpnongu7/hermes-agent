@@ -65,7 +65,7 @@ Key settings:
 | `TIMEOUT` | Request timeout in seconds | `120` |
 | `MAX_TOKENS` | Max tokens per response | `4096` |
 
-> **Note (personal):** When running against LM Studio locally I usually set `TIMEOUT=300` — larger models can be slow to respond on first inference. Also found that setting `MAX_TOKENS=2048` helps avoid runaway responses when testing.
+> **Note (personal):** When running against LM Studio locally I usually set `TIMEOUT=300` — larger models can be slow to respond on first inference. Also found that setting `MAX_TOKENS=2048` helps avoid runaway responses when testing. For Ollama specifically, also set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama` (it doesn't validate the key but the field still needs to be set).
 
 ## Architecture
 
