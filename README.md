@@ -63,8 +63,9 @@ Key settings:
 | `MAX_ITERATIONS` | Max agent loop iterations | `20` |
 | `TEMPERATURE` | Sampling temperature | `0.3` |
 | `TIMEOUT` | Request timeout in seconds | `120` |
+| `MAX_TOKENS` | Max tokens per response | `4096` |
 
-> **Note (personal):** When running against LM Studio locally I usually set `TIMEOUT=300` — larger models can be slow to respond on first inference.
+> **Note (personal):** When running against LM Studio locally I usually set `TIMEOUT=300` — larger models can be slow to respond on first inference. Also found that setting `MAX_TOKENS=2048` helps avoid runaway responses when testing.
 
 ## Architecture
 
