@@ -68,6 +68,8 @@ Key settings:
 > **Note (personal):** When running against LM Studio locally I usually set `TIMEOUT=300` — larger models can be slow to respond on first inference. Also found that setting `MAX_TOKENS=2048` helps avoid runaway responses when testing. For Ollama specifically, also set `OPENAI_BASE_URL=http://localhost:11434/v1` and `OPENAI_API_KEY=ollama` (it doesn't validate the key but the field still needs to be set).
 >
 > **Ollama model names:** Don't forget that Ollama uses its own model name format — e.g. `MODEL_NAME=llama3.1:8b` or `MODEL_NAME=nous-hermes2:10.7b` rather than the HuggingFace-style names. Tripped me up the first time.
+>
+> **LM Studio tip:** In LM Studio, make sure "Enable CORS" is checked under the server settings, otherwise you'll get confusing connection errors that don't mention CORS at all.
 
 ## Architecture
 
@@ -93,11 +95,5 @@ Tools are simple Python functions decorated with `@tool`:
 from hermes_agent.tools import tool
 
 @tool
-def my_custom_tool(query: str) -> str:
-    """Description of what this tool does."""
-    return f"Result for: {query}"
+def my_custom_tool
 ```
-
-## Contributing
-
-Pull requests are welcome! Please check the [issue tracker](https://github.com/your-org/hermes-agen
